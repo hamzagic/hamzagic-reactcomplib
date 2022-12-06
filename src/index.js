@@ -1,7 +1,2 @@
-const Base = (props) => {
-   return (
-    <Button {...props}></Button>
-   );
-}
-
-export default Base;
+import React from 'react';
+import styled from "styled-components";

@@ -4,28 +4,32 @@ A series of ReactJS components, ready to be used.
 
 ## Installation
 
-`npm install`
+`npm install --save hamzagic-complibreact`
 
 ## Documentation
 
-### Button
+TBD
+
+### Implementation example
 ```
-import Button from 'hamzagic-reactcomplib';
+import { Button } from 'hamzagic-reactcomplib';
 ```
 Then you will have a series of props to set the button layout:
 
-text: button's text
+**text**: button's text
 
-color: font color
+**color**: font color
 
-bg: background color
+**background**: background color
 
-border: button's border settings
+**border**: button's border settings
 
-padding: padding
+**padding**: element padding
+
+**radius**: border-radius
 
 
-All settings follow css terminology.
+All settings follow css syntax.
 
 Example:
 
@@ -33,8 +37,9 @@ Example:
 <Button
 text='My text'
 color='white'
-bg='blue'
+background='blue'
 border='none'
-padding='5px 20px'>
-</Button>
+padding='5px 20px'
+fontSize='16px'
+radius='5px' />
 ```
