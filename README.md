@@ -15,10 +15,15 @@ import Button from 'hamzagic-reactcomplib';
 Then you will have a series of props to set the button layout:
 
 text: button's text
+
 color: font color
+
 bg: background color
+
 border: button's border settings
+
 padding: padding
+
 
 All settings follow css terminology.
 
