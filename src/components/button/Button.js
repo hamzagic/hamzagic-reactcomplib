@@ -1,5 +1,4 @@
 import React from 'react';
-// import Btn from './styled';
 
 export const Button = props => {
     return (
@@ -9,7 +8,9 @@ export const Button = props => {
                 color={props.color} 
                 background={props.bg}
                 border={props.border}
-                padding={props.padding}>
+                padding={props.padding}
+                radius={props.radius}
+                fontSize={props.fontSize}>
                     {props.text}
             </Btn>
         </div>
