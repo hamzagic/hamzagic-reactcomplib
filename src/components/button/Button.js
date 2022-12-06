@@ -1,12 +1,17 @@
 import React from 'react';
-import Btn from './styled';
+// import Btn from './styled';
 
-const Button = props => {
+export const Button = props => {
     return (
-        <Div className={props.styles}>
-            <Btn onClick={props.onClick} color={props.color} background={props.bg}>{props.text}</Btn>
-        </Div>
+        <div className={props.styles}>
+            <Btn 
+                onClick={props.onClick} 
+                color={props.color} 
+                background={props.bg}
+                border={props.border}
+                padding={props.padding}>
+                    {props.text}
+            </Btn>
+        </div>
     );
 }
-
-export default Button;

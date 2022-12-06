@@ -1,3 +1,9 @@
-import Button from './components/button/Button.js';
+// import { Button } from './components/button/Button';
 
-export default Button;
+const Base = (props) => {
+   return (
+    <Button {...props}></Button>
+   );
+}
+
+export default Base;

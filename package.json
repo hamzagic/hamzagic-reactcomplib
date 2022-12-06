@@ -1,6 +1,6 @@
 {
   "name": "hamzagic-complibreact",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "description": "ReactJS library",
   "main": "index.js",
   "scripts": {
@@ -19,5 +19,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.6"
   }
 }

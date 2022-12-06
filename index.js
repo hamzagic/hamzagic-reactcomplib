@@ -1,23 +1,33 @@
 import React from 'react';
-import Btn from './styled';
-const Button = props => {
-  return /*#__PURE__*/React.createElement(Div, {
+// import Btn from './styled';
+
+export const Button = props => {
+  return /*#__PURE__*/React.createElement("div", {
     className: props.styles
   }, /*#__PURE__*/React.createElement(Btn, {
     onClick: props.onClick,
     color: props.color,
-    background: props.bg
+    background: props.bg,
+    border: props.border,
+    padding: props.padding
   }, props.text));
 };
-export default Button;
 import styled from "styled-components";
-const Btn = styled.button`
+export const Btn = styled.button`
     font-size: 18px;
     color: ${props => props.color};
     background: ${props => props.background};
-    padding: 0px 20px;
+    padding: ${props => props.padding};
     border-radius: 5px;
+    border: ${props => props.border};
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
 `;
-export default Btn;
-import Button from './components/button/Button.js';
-export default Button;
+// import { Button } from './components/button/Button';
+
+const Base = props => {
+  return /*#__PURE__*/React.createElement(Button, props);
+};
+export default Base;
